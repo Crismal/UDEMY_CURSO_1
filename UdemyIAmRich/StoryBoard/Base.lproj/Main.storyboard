@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.3.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UdemyIAmRich" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ruby" translatesAutoresizingMaskIntoConstraints="NO" id="ufJ-vO-zqs">
+                                <rect key="frame" x="130.66666666666666" y="349" width="114" height="114"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9GU-zU-bew">
+                                <rect key="frame" x="82.666666666666686" y="503" width="210" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Pulsame y seras rico!!">
+                                    <color key="titleColor" red="0.63921568630000003" green="0.15686274510000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.63921568630000003" green="0.15686274510000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nes-c7-fPU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am Rich" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBr-pz-Ixa">
+                                <rect key="frame" x="104.66666666666669" y="264.66666666666669" width="166" height="44.333333333333314"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" red="0.63921568630000003" green="0.15686274510000001" blue="0.090196078430000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ufJ-vO-zqs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4mh-Mf-60Q"/>
+                            <constraint firstItem="ufJ-vO-zqs" firstAttribute="top" secondItem="wBr-pz-Ixa" secondAttribute="bottom" constant="40" id="SwW-5B-IWi"/>
+                            <constraint firstItem="wBr-pz-Ixa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g9J-lJ-ISv"/>
+                            <constraint firstItem="9GU-zU-bew" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lGr-7z-YW1"/>
+                            <constraint firstItem="ufJ-vO-zqs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lv0-xh-T29"/>
+                            <constraint firstItem="9GU-zU-bew" firstAttribute="top" secondItem="ufJ-vO-zqs" secondAttribute="bottom" constant="40" id="ywx-hA-XPY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="BtnPulsame" destination="9GU-zU-bew" id="kYG-AP-He5"/>
+                        <outlet property="ImgLogo" destination="ufJ-vO-zqs" id="Fy3-MS-365"/>
+                        <outlet property="LblTitulo" destination="wBr-pz-Ixa" id="agg-JM-rxa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="136.95652173913044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ruby" width="114" height="114"/>
+    </resources>
+</document>

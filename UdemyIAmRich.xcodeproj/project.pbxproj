@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696D031B2120B2E8005388DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 696D031A2120B2E8005388DF /* Assets.xcassets */; };
 		69A462592120798C00E83802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A462582120798C00E83802 /* AppDelegate.swift */; };
 		69A4625B2120798D00E83802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A4625A2120798D00E83802 /* ViewController.swift */; };
 		69A4625E2120798D00E83802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A4625C2120798D00E83802 /* Main.storyboard */; };
-		69A462602120798D00E83802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A4625F2120798D00E83802 /* Assets.xcassets */; };
 		69A462632120798D00E83802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A462612120798D00E83802 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		696D031A2120B2E8005388DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		69A462552120798C00E83802 /* UdemyIAmRich.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UdemyIAmRich.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A462582120798C00E83802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A4625A2120798D00E83802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69A4625D2120798D00E83802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		69A4625F2120798D00E83802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69A462622120798D00E83802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69A462642120798E00E83802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +35,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		696D031C2120B491005388DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69A4625A2120798D00E83802 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		696D031D2120B4A6005388DF /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				69A4625C2120798D00E83802 /* Main.storyboard */,
+				69A462612120798D00E83802 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		69A4624C2120798C00E83802 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +71,10 @@
 		69A462572120798C00E83802 /* UdemyIAmRich */ = {
 			isa = PBXGroup;
 			children = (
+				696D031C2120B491005388DF /* Controller */,
+				696D031D2120B4A6005388DF /* StoryBoard */,
 				69A462582120798C00E83802 /* AppDelegate.swift */,
-				69A4625A2120798D00E83802 /* ViewController.swift */,
-				69A4625C2120798D00E83802 /* Main.storyboard */,
-				69A4625F2120798D00E83802 /* Assets.xcassets */,
-				69A462612120798D00E83802 /* LaunchScreen.storyboard */,
+				696D031A2120B2E8005388DF /* Assets.xcassets */,
 				69A462642120798E00E83802 /* Info.plist */,
 			);
 			path = UdemyIAmRich;
@@ -123,7 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69A462632120798D00E83802 /* LaunchScreen.storyboard in Resources */,
-				69A462602120798D00E83802 /* Assets.xcassets in Resources */,
+				696D031B2120B2E8005388DF /* Assets.xcassets in Resources */,
 				69A4625E2120798D00E83802 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VFG22J23H;
 				INFOPLIST_FILE = UdemyIAmRich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VFG22J23H;
 				INFOPLIST_FILE = UdemyIAmRich/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
